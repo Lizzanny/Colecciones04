@@ -9,25 +9,25 @@ package Peliculas;
  * @author LizzW
  */
 public class Pelicula {
-    private String título;
+    private String titulo;
     private String director;
-    private String duración;
+    private Integer duracion;
 
     public Pelicula() {
     }
 
-    public Pelicula(String título, String director, String duración) {
-        this.título = título;
+    public Pelicula(String titulo, String director, Integer duracion) {
+        this.titulo = titulo;
         this.director = director;
-        this.duración = duración;
+        this.duracion = duracion;
     }
 
-    public String getTítulo() {
-        return título;
+    public String getTitulo() {
+        return titulo;
     }
 
-    public void setTítulo(String título) {
-        this.título = título;
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
     }
 
     public String getDirector() {
@@ -38,13 +38,18 @@ public class Pelicula {
         this.director = director;
     }
 
-    public String getDuración() {
-        return duración;
+    public Integer getDuracion() {
+        return duracion;
     }
 
-    public void setDuración(String duración) {
-        this.duración = duración;
+    public void setDuracion(Integer duracion) {
+        this.duracion = duracion;
     }
-    
+
+    @Override
+    public String toString() {
+        return "Pelicula{" + "título=" + titulo + ", director=" + director + ", duracion=" + duracion + '}';
+    }
+
     
 }
